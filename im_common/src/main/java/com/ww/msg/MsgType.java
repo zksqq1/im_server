@@ -5,6 +5,7 @@ public enum MsgType {
     NORMAL(100, CommonMsgBody.class),
     ATTACH(200, AttachMsgBody.class),
     KEY_CHANGE(300, CommonMsgBody.class),
+    CHANNEL_MEMBER_CHANGE(400, ChannelMemberChangeMsgBody.class),
     ;
 
     private final int code;
