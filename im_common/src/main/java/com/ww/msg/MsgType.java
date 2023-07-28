@@ -1,10 +1,16 @@
 package com.ww.msg;
 
+import com.ww.msg.body.AbstractMsgBody;
+import com.ww.msg.body.AttachMsgBody;
+import com.ww.msg.body.ChannelKeyChangeMsgBody;
+import com.ww.msg.body.ChannelMemberChangeMsgBody;
+import com.ww.msg.body.CommonMsgBody;
+
 public enum MsgType {
     DEFAULT(-1, null),
     NORMAL(100, CommonMsgBody.class),
     ATTACH(200, AttachMsgBody.class),
-    KEY_CHANGE(300, CommonMsgBody.class),
+    KEY_CHANGE(300, ChannelKeyChangeMsgBody.class),
     CHANNEL_MEMBER_CHANGE(400, ChannelMemberChangeMsgBody.class),
     ;
 

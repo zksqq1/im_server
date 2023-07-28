@@ -1,4 +1,4 @@
-package com.ww.msg;
+package com.ww.msg.body;
 
 import lombok.Data;
 

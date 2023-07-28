@@ -1,5 +1,6 @@
 package com.ww.msg;
 
+import com.ww.msg.body.AbstractMsgBody;
 import lombok.Data;
 
 @Data
